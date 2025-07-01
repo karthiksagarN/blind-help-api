@@ -6,7 +6,7 @@ import numpy as np
 import traceback
 
 app = FastAPI()
-model = YOLO("yolov8x.pt")
+model = YOLO("yolov8n.pt")
 
 @app.post("/detect/")
 async def detect_objects(file: UploadFile = File(...)):
